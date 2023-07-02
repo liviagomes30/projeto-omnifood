@@ -25,7 +25,7 @@ Paragraph default: 1.6
 
 -- Primary: #e67e22
 
--Tints (Mais clara): #fdf2e9
+-Tints (Mais clara): #fdf2e9 #fae5d3
 -Shades (Mais escura): #cf711f
 -Accents: 
 -Greys: #555  #333
@@ -72,7 +72,8 @@ body {
 
 .grid {
   display: grid;
-  gap: 9.6rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 .grid--2-cols {
@@ -83,8 +84,13 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid--center-v {
+  align-items: center;
+}
+
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-terciary {
   color: #333;
   font-weight: 700;
   letter-spacing: -0.5px;
@@ -103,6 +109,9 @@ body {
 }
 
 .heading-terciary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
 
 .subheading {
